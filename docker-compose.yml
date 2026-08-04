@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  sample-html:
+    image: laahaasil/devops-sample-app:latest
+    container_name: sample-html
+    ports:
+      - "8084:80"
+    restart: unless-stopped
